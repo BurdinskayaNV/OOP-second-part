@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="MainWindow" accessibleText="Работа с прямоугольником" alignment="TOP_CENTER" focusTraversable="true" prefHeight="500.0" prefWidth="700.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rectangleclassfx.MainController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Label fx:id="Label_Main" alignment="CENTER" cache="true" prefHeight="35.0" prefWidth="403.0" text="Работа с прямоугольником" textAlignment="CENTER">
+      <font>
+         <Font size="24.0" />
+      </font>
+      <effect>
+         <Blend />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="NONE" />
+      </cursor>
+   </Label>
+   <AnchorPane id="Main_Pane" prefHeight="419.0" prefWidth="713.0" style="-fx-background-color: C1FAF7; -fx-background-radius: 30;">
+      <opaqueInsets>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </opaqueInsets>
+      <children>
+         <Button fx:id="Button_Create" layoutX="325.0" layoutY="15.0" mnemonicParsing="false" onAction="#onButton_CreateClick" text="          Задать          ">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Label fx:id="Label_Coor" layoutX="20.0" layoutY="15.0" text="Задайте координаты трёх точек">
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+         <Label fx:id="Label_A" layoutX="24.0" layoutY="90.0" text="A">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="Label_B" layoutX="24.0" layoutY="135.0" text="B">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="Label_C" layoutX="24.0" layoutY="180.0" text="C">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="Label_X" layoutX="75.0" layoutY="50.0" text="X">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="Label_Y" layoutX="160.0" layoutY="50.0" text="Y">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <TextField fx:id="Text_AX" layoutX="55.0" layoutY="90.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <TextField fx:id="Text_AY" layoutX="140.0" layoutY="90.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <TextField fx:id="Text_BX" layoutX="55.0" layoutY="135.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <TextField fx:id="Text_BY" layoutX="140.0" layoutY="135.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <TextField fx:id="Text_CX" layoutX="55.0" layoutY="180.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <TextField fx:id="Text_CY" layoutX="140.0" layoutY="180.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <Button fx:id="Button_Figure" layoutX="30.0" layoutY="225.0" mnemonicParsing="false" onAction="#onButton_FigureClick" text="Фигура прямоугольник ?">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <TextField fx:id="Text_figure" layoutX="33.0" layoutY="269.0" prefHeight="25.0" prefWidth="180.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <Button fx:id="Button_FindD" disable="true" layoutX="20.0" layoutY="315.0" mnemonicParsing="false" onAction="#onButton_FindDClick" text="Найти координаты 4 точки D">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Label fx:id="Label_D" disable="true" layoutX="24.0" layoutY="360.0" text="D">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <TextField fx:id="Text_DX" disable="true" layoutX="55.0" layoutY="360.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="Text_DY" disable="true" layoutX="140.0" layoutY="360.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <Button fx:id="Button_Result" disable="true" layoutX="270.0" layoutY="90.0" mnemonicParsing="false" onAction="#onButtonResultClick" text="            Вычислить            ">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Label fx:id="Label_lengthA" disable="true" layoutX="270.0" layoutY="135.0" text="Длина прямоугольника - ">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="Label_Per" disable="true" layoutX="270.0" layoutY="225.0" text="Периметр прямоугольника P - ">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="Label_Sq" disable="true" layoutX="270.0" layoutY="270.0" text="Площадь прямоугольника S - ">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="Text_lengthA" disable="true" layoutX="540.0" layoutY="135.0" prefHeight="25.0" prefWidth="100.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="Text_lengthB" disable="true" layoutX="540.0" layoutY="180.0" prefHeight="25.0" prefWidth="100.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="Text_Per" disable="true" layoutX="540.0" layoutY="225.0" prefHeight="25.0" prefWidth="100.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="Text_Sq" disable="true" layoutX="540.0" layoutY="270.0" prefHeight="25.0" prefWidth="100.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <Label fx:id="Label_lengthB" disable="true" layoutX="270.0" layoutY="180.0" text="Ширина прямоугольника - ">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Button fx:id="closeButton" layoutX="580.0" layoutY="350.0" mnemonicParsing="false" onAction="#oncloseButtonClick" text="Выход" textAlignment="CENTER">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+      </children></AnchorPane>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <effect>
+      <Blend />
+   </effect>
+</VBox>
