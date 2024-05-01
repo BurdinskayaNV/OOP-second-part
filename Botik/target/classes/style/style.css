@@ -1,0 +1,17 @@
+.bodybg {
+    /*-fx-background-color: rgba(0,0,0,0.4);
+    -fx-background-radius: 70;*/
+    -fx-background-color: linear-gradient(to right, #D2B48C, #D2B48C, #D2B48C);
+    -fx-background-image: url ("image/1.jpg");
+     -fx-background-size: 100% 100%;
+}
+
+.bodychat {
+    -fx-background-color: linear-gradient(to right, #4169E1, #4682B4, #191970);
+    /*-fx-background-color: transparent; */
+}
+
+.bodychat1 {
+    -fx-background-color: linear-gradient(to right, #FFC0CB, #AFEEEE, #DB7093);
+    /*-fx-background-color: transparent; */
+}
