@@ -1,4 +1,4 @@
-// Author: Бурдинская Наталья ВМК-22
+// Author: Бурдинская Наталья ВМК-22 
 package botik;
 
 import static com.example.botik.Bot.getUrlContent;
