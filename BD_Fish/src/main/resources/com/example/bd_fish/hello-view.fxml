@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="750.0" prefWidth="850.0" styleClass="bodychat1" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_fish.MainController">
+  <MenuBar prefHeight="30.0" prefWidth="800.0">
+      <Menu mnemonicParsing="false" text="Файл">
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemSaveClick" text="Сохранить">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="S" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator></MenuItem>
+
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemOpenClick" text="Открыть">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="O" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator></MenuItem>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Рыба">
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemAddClick" text="Добавить">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="INSERT" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator></MenuItem>
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemChangeClick" text="Изменить">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="C" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator></MenuItem>
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemDeleteClick" text="Удалить">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="DELETE" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator></MenuItem>
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemSearchClick" text="Найти">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="F" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator></MenuItem>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Сортировка">
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemIDSortClick" text="По ID" />
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemNameFishSortClick" text="По Наименованию" />
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemFeatureSortClick" text="По Типу рыбы" />
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemMethodSortClick" text="По Способу обработки" />
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemSizeSortClick" text="По Размеру рыбы" />
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemPriceSortClick" text="По Цене" />
+      </Menu>
+      <Menu mnemonicParsing="false" text="Справка">
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemProgClick" text="О программе" />
+          <MenuItem mnemonicParsing="false" onAction="#onMenuItemAftoClick" text="Об Авторе" />
+      </Menu>
+  </MenuBar>
+<AnchorPane>
+    <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" text="КАТАЛОГ FRESH FISH" textAlignment="CENTER">
+        <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
+      </Label>
+    <TableView fx:id="MainTable" layoutY="50.0" prefHeight="600.0" prefWidth="850.0" />
+    </children>
+</AnchorPane>
+<Label fx:id="LabelMessage" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="800.0" textAlignment="CENTER" textOverrun="CLIP">
+  <font>
+         <Font name="System Italic" size="18.0" />
+      </font>
+  <VBox.margin>
+         <Insets />
+      </VBox.margin>
+  <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <padding>
+         <Insets top="20.0" />
+      </padding>
+</Label>
+</VBox>

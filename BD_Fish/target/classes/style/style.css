@@ -1,0 +1,9 @@
+.bodychat {
+    -fx-background-color: linear-gradient(to right, #D6EAF8, #85C1E9, #3498DB);
+    /*-fx-background-color: transparent; */
+}
+
+.bodychat1 {
+    -fx-background-color: linear-gradient(to right, #FFC0CB, #AFEEEE, #DB7093);
+    /*-fx-background-color: transparent; */
+}
